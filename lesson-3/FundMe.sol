@@ -11,7 +11,7 @@ import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/interfaces/Ag
 contract FundMe {
     mapping(address => uint256) public fundersToAmount;
 
-    uint256 constant MINIMUM_VALUE = 100 * 10 ** 18; //USD
+    uint256 constant MINIMUM_VALUE = 100 * 10 ** 18; //wei
     
     AggregatorV3Interface internal dataFeed;
 
